@@ -65,7 +65,20 @@ p {
 }
 
 @media (max-width: 375px ) {
+    body {
+        display: block;
+        height: auto;
+    }
     .card {
+        margin: 3rem auto;
         width: 80%;
+    }
+
+    .card h1 {
+        font-size: calc(1.3rem - 0.5vw)
+    }
+
+    .card p{
+        font-size: calc(var(--fs-paragraph) - 0.5vw);
     }
 }
