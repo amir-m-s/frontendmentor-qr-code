@@ -18,8 +18,54 @@
 
 body {
     font-family: var(--ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-gray);
 }
 
 p {
     font-size: var(--fs-paragraph);
+}
+
+.card {
+    width: 18rem;
+    background-color: var(--white);
+    margin-block: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card > *:not(img) {
+    margin-block: 1.5rem;
+}
+
+.card h1 {
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.card p {
+    color: var(--grayish-blue);
+    text-align: center;
+    font-size: var(--fs-paragraph);
+}
+
+.attribution {
+    padding: 0.5rem;
+}
+
+@media (max-width: 375px ) {
+    .card {
+        width: 80%;
+    }
 }
